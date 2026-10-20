@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Baiwei Guo (郭佰威) - CUHK-Shenzhen</title>
+  <meta name="author" content="Baiwei Guo">
+  <meta name="description" content="Academic homepage of Baiwei Guo (郭佰威), Assistant Professor at The Chinese University of Hong Kong, Shenzhen (CUHK-Shenzhen).">
+
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- Top Sticky Navigation Bar (Jiajun Wu style) -->
+  <header>
+    <div class="header-inner">
+      <div class="ftheader">
+        <a href="#home">Baiwei Guo (郭佰威)</a>
+      </div>
+      <div class="ftsubheader">
+        <a href="#home">Home</a>
+        <a href="#recruitment">Open Positions</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#awards">Awards</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="body">
+    <div class="container">
+
+      <!-- Home / Profile Section -->
+      <section id="home" class="anchor">
+        <div class="heading">
+          <div class="img">
+            <img src="images/avatar_placeholder.svg" alt="Baiwei Guo photo" id="profile-photo">
+          </div>
+          <div class="info">
+            <div class="name">
+              Baiwei Guo <span class="name-zh">郭佰威</span>
+            </div>
+            <div class="role">Assistant Professor</div>
+            <div class="affil">
+              School of Science and Engineering (SSE) / School of Data Science (SDS)<br>
+              The Chinese University of Hong Kong, Shenzhen (CUHK-Shenzhen)
+            </div>
+
+            <div class="links">
+              <a href="mailto:baiwei.guo@outlook.com">[Email]</a>
+              <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=2x7T8tEAAAAJ&gmla=AERr9JHgL9NMEe5ntixWqyXQWIkF3VFGvYWG61nvcxK2Qol3e1ZRDTWUPP9X4qOUGUuUDeUxTifDni6NOR3Qi7CgmQkn6uAZDqOk5uVl5ppo" target="_blank">[Google Scholar]</a>
+              <a href="https://github.com/odetojsmith" target="_blank">[GitHub]</a>
+              <!-- CV download link can be placed here once ready -->
+              <!-- <a href="CV_Baiwei_Guo.pdf" target="_blank">[CV (PDF)]</a> -->
+            </div>
+
+            <div class="bio-text">
+              <p>
+                I am an Assistant Professor at <strong>The Chinese University of Hong Kong, Shenzhen (CUHK-Shenzhen)</strong>. Previously, I was a Senior Algorithm Engineer at Huawei Technologies 2012 Labs.
+              </p>
+              <p>
+                I received my Ph.D. in Electrical Engineering from <strong>EPF Lausanne (EPFL)</strong>, Switzerland, co-advised by <a href="https://people.epfl.ch/giancarlo.ferraritrecate" target="_blank">Prof. Giancarlo Ferrari-Trecate</a> and <a href="https://kamgarpour.epfl.ch/" target="_blank">Prof. Maryam Kamgarpour</a>. Prior to that, I obtained my M.Sc. in Electrical Engineering and Information Technology from <strong>ETH Zürich</strong>, and dual B.Sc. degrees in Electrical Engineering and Applied Mathematics from <strong>Harbin Institute of Technology (HIT)</strong>.
+              </p>
+              <p>
+                My research sits at the intersection of <strong>Control Theory</strong>, <strong>Machine Learning</strong>, and <strong>Mathematical Optimization</strong>, with an emphasis on developing safe, sample-efficient algorithms for real-world cyber-physical and automated engineering systems.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recruitment / Open Positions Box (Collapsible) -->
+      <section id="recruitment" class="anchor">
+        <div class="recruit-box">
+          <div class="recruit-banner" onclick="toggleRecruit()">
+            🔥 <strong>Open Positions / Prospective Students:</strong> I am actively recruiting Ph.D. students, Postdocs, Research Assistants (RA), and self-motivated undergraduate interns.
+            <span id="toggle-arrow" class="toggle-arrow">&#9654;</span> <em><small>(Click to expand requirements)</small></em>
+          </div>
+          <div id="recruit-details" class="recruit-content">
+            <p>
+              We are seeking highly motivated students and researchers with strong mathematical foundations and programming capabilities to join our group at CUHK-Shenzhen. Candidates from Electrical Engineering, Computer Science, Automation, Applied Mathematics, and related fields are warmly welcome.
+            </p>
+            <ul>
+              <li><strong>Ph.D. Students &amp; Postdocs:</strong> Fully funded positions are available with competitive financial support.</li>
+              <li><strong>Research Assistants (RA) &amp; Visiting Students:</strong> Positions open year-round for candidates aiming to publish top-tier papers or prepare for top graduate programs.</li>
+              <li><strong>Undergraduate Interns:</strong> CUHK-Shenzhen and external undergraduate students interested in theory + hands-on implementation are encouraged to reach out.</li>
+            </ul>
+            <p>
+              <strong>How to Apply:</strong> If you are interested, please send an email to <a href="mailto:baiwei.guo@outlook.com"><code>baiwei.guo@outlook.com</code></a> with the subject format <code>[Application - Position] Your Name - University</code>. Please attach your CV, transcripts, and any representative publications/code links.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Research Directions -->
+      <section id="research" class="anchor">
+        <h2>Research Directions</h2>
+
+        <!-- Direction 1: Safe Black-Box Optimization -->
+        <div class="research-topic">
+          <div class="thumb">
+            <div class="visual-card">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M3 3v18h18"/>
+                <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/>
+                <circle cx="18.7" cy="8" r="2"/>
+              </svg>
+              <span>Safe &amp; Sample-Efficient BO</span>
+            </div>
+          </div>
+          <div class="desc">
+            <h3>Safe and Efficient AI-driven Black-Box Optimization</h3>
+            <p>
+              Optimization frameworks for complex systems without analytical objective functions or constraint formulations. We focus on guaranteeing strict constraint satisfaction during exploration (safety) while dramatically improving sample efficiency. Recent efforts integrate <strong>Bayesian Optimization (BO)</strong> with <strong>Reinforcement Learning</strong> and <strong>Generative Foundation Models</strong> (e.g., Diffusion Models for BO) to enable rapid, reliable deployment on real-world systems and lifelong learning tasks.
+            </p>
+          </div>
+        </div>
+
+        <!-- Direction 2: Data-Driven Robust Control -->
+        <div class="research-topic">
+          <div class="thumb">
+            <div class="visual-card">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="3" y="4" width="18" height="16" rx="2"/>
+                <line x1="7" y1="8" x2="17" y2="8"/>
+                <line x1="7" y1="12" x2="13" y2="12"/>
+                <line x1="7" y1="16" x2="15" y2="16"/>
+              </svg>
+              <span>Data-Driven Robust Control</span>
+            </div>
+          </div>
+          <div class="desc">
+            <h3>Data-Driven Robust Control &amp; RL-MPC</h3>
+            <p>
+              Direct data-driven receding-horizon control methodologies without explicit system identification bottlenecks. By conducting perturbation analysis on behavioral system models (e.g., Willems' fundamental lemma) and synthesizing predictive control with policy optimization, we develop safe controllers that maintain robustness against system uncertainties, non-Gaussian disturbances, and non-stationary dynamic environments.
+            </p>
+          </div>
+        </div>
+
+        <!-- Direction 3: Hardware Design Automation -->
+        <div class="research-topic">
+          <div class="thumb">
+            <div class="visual-card">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="4" y="4" width="16" height="16" rx="2"/>
+                <path d="M9 9h6v6H9z"/>
+                <path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"/>
+              </svg>
+              <span>Hardware-Algorithm Co-Design</span>
+            </div>
+          </div>
+          <div class="desc">
+            <h3>Expertise-Driven Hardware Design Automation &amp; Co-Synthesis</h3>
+            <p>
+              Developing automated hardware design frameworks based on multi-modal black-box optimization. We incorporate domain-specific human expertise and multi-modal models to prune suboptimal design subspaces. Furthermore, we explore the co-synthesis of hardware architectures and control algorithms, jointly optimizing physical parameters and feedback policies using proxy models and warm-start acceleration.
+            </p>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Publications -->
+      <section id="publications" class="anchor">
+        <h2>Selected Publications</h2>
+        <p style="color:#666; font-size:13.5px; margin-bottom:20px;">
+          * indicates equal contribution. Full list available on <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=2x7T8tEAAAAJ&gmla=AERr9JHgL9NMEe5ntixWqyXQWIkF3VFGvYWG61nvcxK2Qol3e1ZRDTWUPP9X4qOUGUuUDeUxTifDni6NOR3Qi7CgmQkn6uAZDqOk5uVl5ppo" target="_blank">Google Scholar</a>.
+        </p>
+
+        <!-- Paper 1: Automatica 2025 -->
+        <div class="publication">
+          <div class="img">
+            <div class="visual-card">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+              </svg>
+              <span>Automatica 2025</span>
+            </div>
+          </div>
+          <div class="text">
+            <div class="title">Safe Zeroth-Order Optimization Using Quadratic Local Approximations</div>
+            <div class="authors">
+              <span class="author-self">Baiwei Guo</span>, Yuning Jiang, Giancarlo Ferrari-Trecate, Maryam Kamgarpour
+            </div>
+            <div class="venue">
+              Automatica, vol. 174, pp. 112141, 2025
+            </div>
+            <div class="links">
+              <a href="https://doi.org/10.1016/j.automatica.2025.112141" target="_blank">[Journal Link]</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paper 2: IEEE TAC 2023 -->
+        <div class="publication">
+          <div class="img">
+            <div class="visual-card">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+              </svg>
+              <span>IEEE TAC 2023</span>
+            </div>
+          </div>
+          <div class="text">
+            <div class="title">Near-Optimal Design of Safe Output Feedback Controllers from Noisy Data</div>
+            <div class="authors">
+              Luca Furieri, <span class="author-self">Baiwei Guo</span>, Andrea Martin, Giancarlo Ferrari-Trecate
+            </div>
+            <div class="venue">
+              IEEE Transactions on Automatic Control (TAC), vol. 68, no. 5, pp. 2699–2714, May 2023
+            </div>
+            <div class="links">
+              <a href="https://ieeexplore.ieee.org/document/9869689" target="_blank">[IEEE Xplore]</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paper 3: ECC 2023 (Best Student Paper Award) -->
+        <div class="publication">
+          <div class="img">
+            <div class="visual-card">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="8" r="7"/>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+              </svg>
+              <span class="highlight">ECC Award Paper</span>
+            </div>
+          </div>
+          <div class="text">
+            <div class="title">Safe Zeroth-Order Convex Optimization with Unknown Constraints</div>
+            <div class="authors">
+              <span class="author-self">Baiwei Guo</span>, Yuning Jiang, Giancarlo Ferrari-Trecate, Maryam Kamgarpour
+            </div>
+            <div class="venue">
+              European Control Conference (ECC), 2023
+            </div>
+            <div class="links">
+              <span class="highlight">🏆 Best Student Paper Award (1/300+)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paper 4: IEEE TAC 2021 -->
+        <div class="publication">
+          <div class="img">
+            <div class="visual-card">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+              </svg>
+              <span>IEEE TAC 2021</span>
+            </div>
+          </div>
+          <div class="text">
+            <div class="title">Actuator Placement Under Structural Controllability Using Forward and Reverse Greedy Algorithms</div>
+            <div class="authors">
+              <span class="author-self">Baiwei Guo</span>, Orcun Karaca, Tyler Summers, Maryam Kamgarpour
+            </div>
+            <div class="venue">
+              IEEE Transactions on Automatic Control (TAC), vol. 66, no. 12, pp. 5845–5860, Dec. 2021
+            </div>
+            <div class="links">
+              <a href="https://ieeexplore.ieee.org/document/9319208" target="_blank">[IEEE Xplore]</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paper 5: EJOR 2021 -->
+        <div class="publication">
+          <div class="img">
+            <div class="visual-card">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+              </svg>
+              <span>EJOR 2021</span>
+            </div>
+          </div>
+          <div class="text">
+            <div class="title">A Comment on Guarantees of a Greedy Algorithm</div>
+            <div class="authors">
+              Orcun Karaca, <span class="author-self">Baiwei Guo</span>, Maryam Kamgarpour
+            </div>
+            <div class="venue">
+              European Journal of Operational Research (EJOR), vol. 290, no. 1, 2021
+            </div>
+            <div class="links">
+              <a href="https://doi.org/10.1016/j.ejor.2020.10.021" target="_blank">[Journal Link]</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paper 6: arXiv Preprint -->
+        <div class="publication">
+          <div class="img">
+            <div class="visual-card">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+              </svg>
+              <span>arXiv 2023</span>
+            </div>
+          </div>
+          <div class="text">
+            <div class="title">Data-Driven Robust Control Based on Perturbation Analysis of the Behavioral Model</div>
+            <div class="authors">
+              <span class="author-self">Baiwei Guo</span>, Yuning Jiang, Colin Jones, Giancarlo Ferrari-Trecate
+            </div>
+            <div class="venue">
+              arXiv:2308.14178, 2023
+            </div>
+            <div class="links">
+              <a href="https://arxiv.org/abs/2308.14178" target="_blank">[arXiv]</a>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Honors & Awards -->
+      <section id="awards" class="anchor">
+        <h2>Honors &amp; Awards</h2>
+        <ul>
+          <li><strong>Best Student Paper Award</strong>, European Control Conference (ECC) (1/300+), 2023</li>
+          <li><strong>Nomination for Thesis Distinction</strong>, EPF Lausanne (EPFL), 2023</li>
+          <li><strong>Scholarship for International Students</strong>, ETH Zürich, 2017</li>
+          <li><strong>Outstanding Graduate Student</strong>, Harbin Institute of Technology, 2016</li>
+          <li><strong>Outstanding Undergraduate in Heilongjiang Province</strong> (Top 5 out of 284), 2016</li>
+          <li><strong>Meritorious Winner</strong>, Mathematical Contest in Modeling (MCM, Top 5%), 2015</li>
+          <li><strong>First Prize</strong>, China Undergraduate Mathematical Competitions (10th in 300+), 2014</li>
+        </ul>
+      </section>
+
+      <footer>
+        <p>&copy; 2026 Baiwei Guo (郭佰威). Hosted on GitHub Pages.</p>
+      </footer>
+
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

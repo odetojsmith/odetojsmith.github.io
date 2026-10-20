@@ -1,0 +1,454 @@
+/* Academic Website Stylesheet - Inspired by Jiajun Wu's personal website */
+
+header {
+  width: 100%;
+  height: 50px;
+  margin-top: 0px;
+  text-align: center;
+  background-color: #003366;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+
+body {
+  margin: auto;
+  padding: 0;
+  color: #111;
+  background: #fff;
+  transition: all 0.2s ease;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 14.5px;
+  line-height: 170%;
+  text-align: justify;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6, .title, span.title, .ftheader, span.venue, span.highlight {
+  font-weight: 600;
+}
+
+h1, h2 {
+  margin-top: 1.5em;
+  margin-bottom: 0.8em;
+  color: #003366;
+  border-bottom: 1.5px solid #eaecef;
+  padding-bottom: 0.3em;
+}
+
+h3 {
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
+  color: #222;
+}
+
+ul, ol, dl {
+  margin: 0;
+  padding: 6px 10px 8px 24px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+img.img_responsive {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container a:link,
+.container a:visited,
+main a:link,
+main a:visited {
+  color: #0055AA;
+  text-decoration: none;
+}
+
+.container a:hover,
+main a:hover {
+  text-decoration: underline;
+}
+
+.ftheader a:link,
+.ftheader a:visited,
+.ftsubheader a:link,
+.ftsubheader a:visited {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.ftsubheader a {
+  padding: 0 12px;
+  font-size: 14px;
+}
+
+.ftsubheader a:hover {
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
+.title a:link,
+.title a:visited {
+  color: #000000;
+}
+
+.authors {
+  font-size: 100%;
+  color: #555555;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.authors a:link,
+.authors a:visited {
+  color: #444444;
+}
+
+span.author-self {
+  color: #000000;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+span.author, span.tag {
+  white-space: nowrap;
+}
+
+.outercontainer {
+  text-align: center;
+  width: 100%;
+}
+
+.header-inner, .container, .content, main {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 980px;
+  width: 100%;
+}
+
+.header-inner {
+  line-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.ftheader {
+  color: #FFF;
+  font-size: 1.25em;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.ftsubheader {
+  color: #FFF;
+}
+
+main.body {
+  margin-top: 50px;
+  padding: 25px 20px 60px 20px;
+  box-sizing: border-box;
+}
+
+/* Heading section */
+.heading {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.heading .img {
+  flex-shrink: 0;
+  width: 210px;
+  margin-right: 35px;
+}
+
+.heading .img img {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  display: block;
+}
+
+.heading .info {
+  flex-grow: 1;
+}
+
+.heading .name {
+  font-size: 26px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+.heading .name-zh {
+  font-size: 22px;
+  font-weight: 600;
+  color: #444;
+  margin-left: 8px;
+}
+
+.heading .role {
+  font-size: 16px;
+  font-weight: 600;
+  color: #003366;
+  margin-bottom: 6px;
+}
+
+.heading .affil {
+  font-size: 14.5px;
+  color: #333;
+  line-height: 150%;
+  margin-bottom: 12px;
+}
+
+.heading .links {
+  margin-top: 12px;
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+
+.heading .links a {
+  margin-right: 14px;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.heading .bio-text {
+  margin-top: 10px;
+  line-height: 175%;
+}
+
+/* Prospective students alert & collapsible */
+.recruit-box {
+  background: #f7f9fc;
+  border-left: 4px solid #0055AA;
+  padding: 14px 18px;
+  margin: 24px 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.recruit-banner {
+  font-size: 15px;
+  font-weight: 600;
+  color: #003366;
+  cursor: pointer;
+}
+
+.recruit-banner span.toggle-arrow {
+  display: inline-block;
+  transition: transform 0.2s ease;
+  font-size: 12px;
+  margin-left: 6px;
+}
+
+.recruit-content {
+  display: none;
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px dashed #d0d7de;
+  font-size: 14px;
+  line-height: 175%;
+}
+
+.recruit-content.active {
+  display: block;
+}
+
+/* Research Directions Section */
+.research-topic {
+  display: flex;
+  margin-bottom: 26px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.research-topic:last-child {
+  border-bottom: none;
+}
+
+.research-topic .thumb {
+  flex-shrink: 0;
+  width: 240px;
+  margin-right: 25px;
+  padding-top: 4px;
+}
+
+.research-topic .thumb img,
+.research-topic .thumb .placeholder-thumb {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #e1e4e8;
+  display: block;
+}
+
+.research-topic .desc {
+  flex-grow: 1;
+}
+
+.research-topic .desc h3 {
+  margin-top: 0;
+  font-size: 16px;
+  color: #003366;
+}
+
+.research-topic .desc p {
+  margin: 6px 0 0 0;
+  line-height: 168%;
+}
+
+/* Publications Section */
+.publication {
+  display: flex;
+  margin-bottom: 24px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.publication:last-child {
+  border-bottom: none;
+}
+
+.publication .img {
+  flex-shrink: 0;
+  width: 240px;
+  margin-right: 25px;
+  padding-top: 4px;
+}
+
+.publication .img img,
+.publication .img .pub-thumb {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #e1e4e8;
+  display: block;
+}
+
+.publication .text {
+  flex-grow: 1;
+}
+
+.publication .title {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 140%;
+  color: #000;
+}
+
+.publication .authors {
+  font-size: 13.8px;
+}
+
+.publication .venue {
+  font-size: 13.8px;
+  color: #222;
+  font-style: italic;
+}
+
+.publication .links {
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+.publication .links a {
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+span.highlight {
+  color: #BB2222;
+  font-weight: 600;
+}
+
+/* Placeholder for visuals */
+.visual-card {
+  background: #f6f8fa;
+  border: 1px solid #d0d7de;
+  border-radius: 4px;
+  height: 135px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #656d76;
+  font-size: 12px;
+  text-align: center;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.visual-card svg {
+  margin-bottom: 6px;
+  stroke: #0055AA;
+}
+
+/* Anchor offset for fixed header */
+.anchor {
+  scroll-margin-top: 65px;
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #eaecef;
+  text-align: center;
+  font-size: 13px;
+  color: #777;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  header {
+    height: auto;
+    position: relative;
+  }
+  .header-inner {
+    flex-direction: column;
+    line-height: normal;
+    padding: 12px 15px;
+  }
+  .ftheader {
+    margin-bottom: 8px;
+  }
+  .ftsubheader a {
+    padding: 0 8px;
+    font-size: 13px;
+  }
+  main.body {
+    margin-top: 0;
+    padding: 15px;
+  }
+  .heading {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .heading .img {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 170px;
+  }
+  .heading .links {
+    margin-bottom: 18px;
+  }
+  .research-topic, .publication {
+    flex-direction: column;
+  }
+  .research-topic .thumb, .publication .img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+  body {
+    text-align: left;
+  }
+}
