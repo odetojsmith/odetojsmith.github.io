@@ -123,7 +123,7 @@
           </div>
         </div>
 
-        <!-- Direction 2: Data-Driven Robust Control -->
+        <!-- Direction 2: Trustworthy Learning-Augmented MPC -->
         <div class="research-topic">
           <div class="thumb">
             <div class="visual-card">
@@ -133,14 +133,19 @@
                 <line x1="7" y1="12" x2="13" y2="12"/>
                 <line x1="7" y1="16" x2="15" y2="16"/>
               </svg>
-              <span>Data-Driven Robust Control</span>
+              <span>Trustworthy Learning + MPC</span>
             </div>
           </div>
           <div class="desc">
-            <h3>Data-Driven Robust Control &amp; RL-MPC</h3>
+            <h3>Trustworthy Learning-Augmented MPC for Embodied Intelligence</h3>
             <p>
-              Direct data-driven receding-horizon control methodologies without explicit system identification bottlenecks. By conducting perturbation analysis on behavioral system models (e.g., Willems' fundamental lemma) and synthesizing predictive control with policy optimization, we develop safe controllers that maintain robustness against system uncertainties, non-Gaussian disturbances, and non-stationary dynamic environments.
+              We pursue trustworthy control for embodied intelligence by combining learning-based methods with model-based MPC, where RL and Bayesian optimization serve to accelerate, tune, and safely deploy MPC controllers:
             </p>
+            <ol>
+              <li><strong>Amortizing MPC with imitation learning.</strong> We train policies that imitate MPC while inheriting its interpretable architecture, replacing computationally intractable real-time optimization with a single forward pass.</li>
+              <li><strong>Safe, model-free tuning of MPC hyperparameters.</strong> Bayesian optimization with sampling-based safety guarantees adjusts MPC hyperparameters to reconcile conflicting design objectives, without relying on an explicit model.</li>
+              <li><strong>Bridging the sim-to-real gap.</strong> The same learning-plus-optimization machinery enables reliable transfer of MPC-based controllers from simulation to physical robot deployment.</li>
+            </ol>
           </div>
         </div>
 
