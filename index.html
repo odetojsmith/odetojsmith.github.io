@@ -149,7 +149,7 @@
           </div>
         </div>
 
-        <!-- Direction 3: Hardware Design Automation -->
+        <!-- Direction 3: Hardware-Control Co-Design -->
         <div class="research-topic">
           <div class="thumb">
             <div class="visual-card">
@@ -158,14 +158,19 @@
                 <path d="M9 9h6v6H9z"/>
                 <path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"/>
               </svg>
-              <span>Hardware-Algorithm Co-Design</span>
+              <span>Hardware-Control Co-Design</span>
             </div>
           </div>
           <div class="desc">
-            <h3>Expertise-Driven Hardware Design Automation &amp; Co-Synthesis</h3>
+            <h3>Hardware-Control Co-Design via Bi-Level Bayesian Optimization</h3>
             <p>
-              Developing automated hardware design frameworks based on multi-modal black-box optimization. We incorporate domain-specific human expertise and multi-modal models to prune suboptimal design subspaces. Furthermore, we explore the co-synthesis of hardware architectures and control algorithms, jointly optimizing physical parameters and feedback policies using proxy models and warm-start acceleration.
+              Today's engineering paradigm designs hardware and control in isolation — a decoupling that prevents systems from reaching their full potential. We treat physical design and control as a single coupled optimization problem, solved through bi-level Bayesian optimization with numerical optimization embedded in the inner loop:
             </p>
+            <ol>
+              <li><strong>Bi-level co-optimization.</strong> An outer Bayesian optimization loop searches over hardware designs, while the embedded inner loop synthesizes the matching control policy, jointly optimizing coupled variables that sequential pipelines cannot handle.</li>
+              <li><strong>Tractable joint search.</strong> Meta-learned warm starts and surrogate models allow the inner loop to converge within a few iterations, making the co-design of "body" and "brain" computationally feasible.</li>
+              <li><strong>High-impact applications.</strong> Representative scenarios include energy consumption reduction in intelligent driving — co-optimizing vehicle/powertrain design with driving policies — and robot morphology-control co-design for agile, energy-efficient manipulation and locomotion.</li>
+            </ol>
           </div>
         </div>
 
