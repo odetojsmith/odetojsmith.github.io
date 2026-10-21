@@ -269,6 +269,12 @@ main.body {
 }
 
 /* Research Directions Section */
+.research-motivation {
+  margin: -8px 0 22px 0;
+  color: #444;
+  font-style: italic;
+}
+
 .research-topic {
   display: flex;
   margin-bottom: 26px;
