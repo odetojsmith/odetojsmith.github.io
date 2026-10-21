@@ -120,12 +120,12 @@
           <div class="desc">
             <h3>A Flexible and Resilient Optimization Platform via Agentic AI</h3>
             <p>
-              We are building a next-generation optimization platform that unifies control design and hardware design under a single mathematical architecture, with three key thrusts:
+              We are building an optimization platform that unifies control and hardware design under a single architecture:
             </p>
             <ol>
-              <li><strong>Agentic problem abstraction.</strong> Agentic AI automatically translates engineering problems from control and hardware design into well-posed mathematical formulations, handling multimodal inputs and outputs — including images, audio, and sensor signals — that permeate real-world design practice.</li>
-              <li><strong>Mixed-integer, unified architecture.</strong> The platform natively supports hybrid discrete-continuous decision variables and accommodates diverse problem settings without altering the underlying problem architecture.</li>
-              <li><strong>Sample-efficient Bayesian optimization.</strong> By integrating acceleration schemes, trust regions, and structured surrogates from classical optimization, we dramatically improve sample efficiency — turning previously intractable problems into solvable ones.</li>
+              <li><strong>Agentic problem abstraction.</strong> Agentic AI translates multimodal engineering inputs — images, audio, sensor signals — into well-posed mathematical formulations.</li>
+              <li><strong>Mixed-integer, unified architecture.</strong> Hybrid discrete-continuous decisions are supported natively, with diverse problem settings served without architectural changes.</li>
+              <li><strong>Sample-efficient Bayesian optimization.</strong> Classical-optimization acceleration (trust regions, structured surrogates) turns previously intractable problems into solvable ones.</li>
             </ol>
           </div>
         </div>
@@ -146,12 +146,12 @@
           <div class="desc">
             <h3>Trustworthy Learning-Augmented MPC for Embodied Intelligence</h3>
             <p>
-              We pursue trustworthy control for embodied intelligence by combining learning-based methods with model-based MPC, where RL and Bayesian optimization serve to accelerate, tune, and safely deploy MPC controllers:
+              We combine learning-based methods with model-based MPC for efficient, interpretable, and trustworthy control of embodied systems:
             </p>
             <ol>
-              <li><strong>Amortizing MPC with imitation learning.</strong> We train policies that imitate MPC while inheriting its interpretable architecture, replacing computationally intractable real-time optimization with a single forward pass.</li>
-              <li><strong>Safe, model-free tuning of MPC hyperparameters.</strong> Bayesian optimization with sampling-based safety guarantees adjusts MPC hyperparameters to reconcile conflicting design objectives, without relying on an explicit model.</li>
-              <li><strong>Bridging the sim-to-real gap.</strong> The same learning-plus-optimization machinery enables reliable transfer of MPC-based controllers from simulation to physical robot deployment.</li>
+              <li><strong>Amortizing MPC with imitation learning.</strong> Learned policies inherit the interpretable MPC structure, replacing intractable real-time optimization with a single forward pass.</li>
+              <li><strong>Safe, model-free hyperparameter tuning.</strong> Bayesian optimization with sampling safety guarantees reconciles conflicting design objectives.</li>
+              <li><strong>Bridging the sim-to-real gap.</strong> Enabling reliable transfer of MPC-based controllers to physical robots.</li>
             </ol>
           </div>
         </div>
@@ -171,12 +171,12 @@
           <div class="desc">
             <h3>Hardware-Control Co-Design via Bi-Level Bayesian Optimization</h3>
             <p>
-              Today's engineering paradigm designs hardware and control in isolation — a decoupling that prevents systems from reaching their full potential. We treat physical design and control as a single coupled optimization problem, solved through bi-level Bayesian optimization with numerical optimization embedded in the inner loop:
+              Hardware and control are still designed in isolation, capping system performance. We co-optimize them as one coupled problem via bi-level Bayesian optimization:
             </p>
             <ol>
-              <li><strong>Bi-level co-optimization.</strong> An outer Bayesian optimization loop searches over hardware designs, while the embedded inner loop synthesizes the matching control policy, jointly optimizing coupled variables that sequential pipelines cannot handle.</li>
-              <li><strong>Tractable joint search.</strong> Meta-learned warm starts and surrogate models allow the inner loop to converge within a few iterations, making the co-design of "body" and "brain" computationally feasible.</li>
-              <li><strong>High-impact applications.</strong> Representative scenarios include energy consumption reduction in intelligent driving — co-optimizing vehicle/powertrain design with driving policies — and robot morphology-control co-design for agile, energy-efficient manipulation and locomotion.</li>
+              <li><strong>Bi-level co-optimization.</strong> An outer BO loop searches hardware designs; the embedded inner loop of numerical optimization synthesizes the matching controller.</li>
+              <li><strong>Tractable joint search.</strong> Meta-learned warm starts let the inner loop converge within a few iterations.</li>
+              <li><strong>High-impact applications.</strong> Energy reduction in intelligent driving, and robot morphology-control co-design for agile, efficient robots.</li>
             </ol>
           </div>
         </div>
